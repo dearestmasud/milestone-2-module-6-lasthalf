@@ -1,22 +1,35 @@
-ul li{
+/* global style */
+h1{
+    text-align: center;
+}
+li a{
+    text-decoration: none;
+}
+
+/* nav first linkup */
+nav ul{
+    display: flex;
+    justify-content: end;
+}
+nav ul>li:hover{
+background-color:rgba(255, 182, 193, 0.228);
+border: 0.3px solid ;
+border-radius: 0.3em;
+}
+nav ul li{
     list-style: none;
     margin-left: 1em;
     font-weight:bolder;
     font-size: x-large;
 }
-ul li :hover{
-    background-color:rgba(222, 184, 135, 0.502);
-    border: 0.3px solid ;
-    border-radius: 2em;
-}
-ul{
-    display: flex;
-    justify-content: end;
-}
-li a{
-    text-decoration: none;
-}
-h1{
-    text-align: center;
+/* nav nested linkup */
 
+.dropdown{
+    display: none;
+    position: absolute;
+}
+nav ul>li:hover ul{
+    display:block;
+    border: none;
+margin-left: -2.7em;
 }
