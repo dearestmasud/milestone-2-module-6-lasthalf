@@ -1,0 +1,22 @@
+ul li{
+    list-style: none;
+    margin-left: 1em;
+    font-weight:bolder;
+    font-size: x-large;
+}
+ul li :hover{
+    background-color:rgba(222, 184, 135, 0.502);
+    border: 0.3px solid ;
+    border-radius: 2em;
+}
+ul{
+    display: flex;
+    justify-content: end;
+}
+li a{
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+
+}

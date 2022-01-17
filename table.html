@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        td,
+        th {
+            border: 1px solid;
+            text-align: center;
+            padding: 0 1em;
+        }
+    </style>
+    <link rel="stylesheet" href="/Style/nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="home.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <table>
+        <caption>Simple table demonstration </caption>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>id</th>
+                <th>result</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>A</td>
+                <td>1</td>
+                <td>++</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>2</td>
+                <td>+++</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td span="3">total</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+    <table>
+        <caption>
+            another table
+        </caption>
+
+        <colgroup>
+            <col span="2">
+            <col span="1">
+            <col span="2">
+        </colgroup>
+
+        <tr>
+            <td scope="col">name</td>
+            <td scope="col">Id</td>
+            <td scope="col">Result</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>1</td>
+            <td>++</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>2</td>
+            <td>+++</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="3">Total</th>
+        </tr>
+    </table>
+</body>
+</html>

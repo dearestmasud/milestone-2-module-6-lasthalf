@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container fieldset {
+            margin-left: 3em;
+        }
+
+        .first {
+            width: 7.5em;
+        }
+
+        .second {
+            width: 6em;
+        }
+    </style>
+    <link rel="stylesheet" href="Style/nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="home.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>CAF formulaire </h2>
+    <form action="">
+        <p> Name : <input type="text" name="name" id="name" placeholder="Enter your Name:"></p>
+        <p>Email : <input type="email" name="email" id="email" placeholder="Enter your E-mail:"></p>
+        <p>password : <input type="password" name="password" id="password" placeholder="Enter password"></p>
+        <section class="container">
+            <fieldset class="first">
+                <legend>select your colour</legend>
+                <p>
+                    <label for="red">
+                        <input type="radio" name="color" id="red">RED
+                    </label>
+                </p>
+                <p>
+                    <label for="green">
+                        <input type="radio" name="color" id="green">GREEN
+                    </label>
+                </p>
+                <p>
+                    <label for="blue">
+                        <input type="radio" name="color" id="blue">BLUE
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="second">
+                <legend>Select Fruits</legend>
+                <p>
+                    <label for="mango">
+                        <input type="checkbox" name="" id="mango">Mango
+                    </label>
+                </p>
+                <p>
+                    <label for="banana">
+                        <input type="checkbox" name="" id="banana">Banana
+                    </label>
+                </p>
+                <p>
+                    <label for="apple">
+                        <input type="checkbox" name="" id="apple">Apple
+                    </label>
+                </p>
+            </fieldset>
+        </section>
+        <h3>leave your comments below: </h3>
+        <textarea name="" id="" cols="30" rows="4"></textarea><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Modify</button>
+    </form>
+</body>
+</html>
